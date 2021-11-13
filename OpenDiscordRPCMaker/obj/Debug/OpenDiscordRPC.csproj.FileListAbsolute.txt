@@ -15,3 +15,7 @@ E:\Programs\OpenDiscordRPCMaker\OpenDiscordRPCMaker\bin\Debug\OpenDiscordRPC.exe
 E:\Programs\OpenDiscordRPCMaker\OpenDiscordRPCMaker\bin\Debug\OpenDiscordRPC.pdb
 E:\Programs\OpenDiscordRPCMaker\OpenDiscordRPCMaker\obj\Debug\OpenDiscordRPC.exe
 E:\Programs\OpenDiscordRPCMaker\OpenDiscordRPCMaker\obj\Debug\OpenDiscordRPC.pdb
+E:\Programs\OpenDiscordRPCMaker\OpenDiscordRPCMaker\bin\Debug\OpenDiscordRPC.exe.manifest
+E:\Programs\OpenDiscordRPCMaker\OpenDiscordRPCMaker\bin\Debug\OpenDiscordRPC.application
+E:\Programs\OpenDiscordRPCMaker\OpenDiscordRPCMaker\obj\Debug\OpenDiscordRPC.exe.manifest
+E:\Programs\OpenDiscordRPCMaker\OpenDiscordRPCMaker\obj\Debug\OpenDiscordRPC.application
