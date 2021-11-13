@@ -1,0 +1,17 @@
+E:\Programs\OpenDiscordRPCMaker\OpenDiscordRPCMaker\bin\Debug\DiscordRPC.dll
+E:\Programs\OpenDiscordRPCMaker\OpenDiscordRPCMaker\bin\Debug\Newtonsoft.Json.dll
+E:\Programs\OpenDiscordRPCMaker\OpenDiscordRPCMaker\bin\Debug\DiscordRPC.pdb
+E:\Programs\OpenDiscordRPCMaker\OpenDiscordRPCMaker\bin\Debug\DiscordRPC.xml
+E:\Programs\OpenDiscordRPCMaker\OpenDiscordRPCMaker\bin\Debug\Newtonsoft.Json.xml
+E:\Programs\OpenDiscordRPCMaker\OpenDiscordRPCMaker\obj\Debug\OpenDiscordRPC.csproj.SuggestedBindingRedirects.cache
+E:\Programs\OpenDiscordRPCMaker\OpenDiscordRPCMaker\obj\Debug\OpenDiscordRPC.csproj.GenerateResource.cache
+E:\Programs\OpenDiscordRPCMaker\OpenDiscordRPCMaker\obj\Debug\OpenDiscordRPC.csproj.CoreCompileInputs.cache
+E:\Programs\OpenDiscordRPCMaker\OpenDiscordRPCMaker\obj\Debug\OpenDiscordRPC.csproj.CopyComplete
+E:\Programs\OpenDiscordRPCMaker\OpenDiscordRPCMaker\obj\Debug\OpenDiscordRPC.Properties.Resources.resources
+E:\Programs\OpenDiscordRPCMaker\OpenDiscordRPCMaker\obj\Debug\OpenDiscordRPC.csproj.AssemblyReference.cache
+E:\Programs\OpenDiscordRPCMaker\OpenDiscordRPCMaker\obj\Debug\OpenDiscordRPC.Home.resources
+E:\Programs\OpenDiscordRPCMaker\OpenDiscordRPCMaker\bin\Debug\OpenDiscordRPC.exe.config
+E:\Programs\OpenDiscordRPCMaker\OpenDiscordRPCMaker\bin\Debug\OpenDiscordRPC.exe
+E:\Programs\OpenDiscordRPCMaker\OpenDiscordRPCMaker\bin\Debug\OpenDiscordRPC.pdb
+E:\Programs\OpenDiscordRPCMaker\OpenDiscordRPCMaker\obj\Debug\OpenDiscordRPC.exe
+E:\Programs\OpenDiscordRPCMaker\OpenDiscordRPCMaker\obj\Debug\OpenDiscordRPC.pdb
