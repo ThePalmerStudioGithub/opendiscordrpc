@@ -32,7 +32,6 @@ namespace OpenDiscordRPC
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.statustext = new System.Windows.Forms.Label();
-            this.status = new System.Windows.Forms.Label();
             this.applicationidtext = new System.Windows.Forms.Label();
             this.applicationid = new System.Windows.Forms.TextBox();
             this.smallimagekeytext = new System.Windows.Forms.Label();
@@ -54,10 +53,13 @@ namespace OpenDiscordRPC
             this.time = new System.Windows.Forms.Label();
             this.updatetime = new System.Windows.Forms.Timer(this.components);
             this.copyright = new System.Windows.Forms.Label();
-            this.icon = new System.Windows.Forms.PictureBox();
+            this.more = new System.Windows.Forms.PictureBox();
             this.github = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.icon)).BeginInit();
+            this.icon = new System.Windows.Forms.PictureBox();
+            this.status = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.more)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.github)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icon)).BeginInit();
             this.SuspendLayout();
             // 
             // statustext
@@ -70,18 +72,6 @@ namespace OpenDiscordRPC
             this.statustext.Size = new System.Drawing.Size(79, 30);
             this.statustext.TabIndex = 1;
             this.statustext.Text = "Status:";
-            // 
-            // status
-            // 
-            this.status.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.status.AutoSize = true;
-            this.status.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.status.ForeColor = System.Drawing.Color.Red;
-            this.status.Location = new System.Drawing.Point(368, 147);
-            this.status.Name = "status";
-            this.status.Size = new System.Drawing.Size(153, 30);
-            this.status.TabIndex = 2;
-            this.status.Text = "Not initialized";
             // 
             // applicationidtext
             // 
@@ -319,16 +309,17 @@ namespace OpenDiscordRPC
             this.copyright.Text = "©2021 TPS™ Enterprises Inc.";
             this.copyright.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // icon
+            // more
             // 
-            this.icon.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.icon.Image = global::OpenDiscordRPC.Properties.Resources.icon;
-            this.icon.Location = new System.Drawing.Point(335, 0);
-            this.icon.Name = "icon";
-            this.icon.Size = new System.Drawing.Size(131, 107);
-            this.icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.icon.TabIndex = 0;
-            this.icon.TabStop = false;
+            this.more.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.more.Image = global::OpenDiscordRPC.Properties.Resources.option;
+            this.more.Location = new System.Drawing.Point(625, 0);
+            this.more.Name = "more";
+            this.more.Size = new System.Drawing.Size(84, 56);
+            this.more.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.more.TabIndex = 24;
+            this.more.TabStop = false;
+            this.more.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // github
             // 
@@ -342,12 +333,36 @@ namespace OpenDiscordRPC
             this.github.TabStop = false;
             this.github.Click += new System.EventHandler(this.github_Click);
             // 
+            // icon
+            // 
+            this.icon.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.icon.Image = global::OpenDiscordRPC.Properties.Resources.icon;
+            this.icon.Location = new System.Drawing.Point(335, 0);
+            this.icon.Name = "icon";
+            this.icon.Size = new System.Drawing.Size(131, 107);
+            this.icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.icon.TabIndex = 0;
+            this.icon.TabStop = false;
+            // 
+            // status
+            // 
+            this.status.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.status.AutoSize = true;
+            this.status.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.status.ForeColor = System.Drawing.Color.Red;
+            this.status.Location = new System.Drawing.Point(368, 147);
+            this.status.Name = "status";
+            this.status.Size = new System.Drawing.Size(153, 30);
+            this.status.TabIndex = 2;
+            this.status.Text = "Not initialized";
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(800, 740);
+            this.Controls.Add(this.more);
             this.Controls.Add(this.github);
             this.Controls.Add(this.copyright);
             this.Controls.Add(this.time);
@@ -377,8 +392,9 @@ namespace OpenDiscordRPC
             this.Name = "Home";
             this.Text = "OpenDiscordRPC";
             this.Load += new System.EventHandler(this.Home_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.icon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.more)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.github)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -388,7 +404,6 @@ namespace OpenDiscordRPC
 
         private System.Windows.Forms.PictureBox icon;
         private System.Windows.Forms.Label statustext;
-        private System.Windows.Forms.Label status;
         private System.Windows.Forms.Label applicationidtext;
         private System.Windows.Forms.TextBox applicationid;
         private System.Windows.Forms.Label smallimagekeytext;
@@ -411,6 +426,8 @@ namespace OpenDiscordRPC
         private System.Windows.Forms.Timer updatetime;
         private System.Windows.Forms.Label copyright;
         private System.Windows.Forms.PictureBox github;
+        private System.Windows.Forms.PictureBox more;
+        private System.Windows.Forms.Label status;
     }
 }
 

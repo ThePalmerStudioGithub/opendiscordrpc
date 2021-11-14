@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DiscordRPC;
 using DiscordRPC.Logging;
+using System.Diagnostics;
 
 namespace OpenDiscordRPC
 {
@@ -30,12 +31,15 @@ namespace OpenDiscordRPC
 
         private void Home_Load(object sender, EventArgs e)
         {
+	
+
+	
 			largeimagekey.Text = "logo";
 			largeimagetext.Text = "OpenDiscordRPC";
 			smallimagekey.Text = "none";
 			smallimagetext.Text = "hi";
 			applicationid.Text = "909155101833314354";
-			state.Text = "Running";
+			state.Text = "Running - Version " + Application.ProductVersion;
 			details.Text = "Initialized";
 			this.Text = "OpenDiscordRPC - Not Initialized - Version " + Application.ProductVersion;
 		}
@@ -90,17 +94,25 @@ namespace OpenDiscordRPC
 				}
 			}) ; 
 		}
-
+		public void UpdateRPCDetails(string details)
+        {
+			client.UpdateDetails(details);
+        }
         private void update_Click(object sender, EventArgs e)
         {
-		
+			if (Properties.Settings.Default.WindowTitle != "")
+			{
+				client.UpdateDetails(Properties.Settings.Default.WindowTitle);
+			}
+			else
+			{
 				client.UpdateDetails(details.Text);
 				client.UpdateState(state.Text);
 				client.UpdateLargeAsset(largeimagekey.Text);
 				client.UpdateSmallAsset(smallimagekey.Text);
 				client.CurrentPresence.Assets.LargeImageText = largeimagetext.Text;
 				client.CurrentPresence.Assets.SmallImageText = smallimagetext.Text;
-		
+			}
         }
 
         private void updatetime_Tick(object sender, EventArgs e)
@@ -111,6 +123,12 @@ namespace OpenDiscordRPC
         private void github_Click(object sender, EventArgs e)
         {
 			System.Diagnostics.Process.Start("https://github.com/ThePalmerStudioGithub/opendiscordrpc");
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+			More more = new More();
+			more.ShowDialog();
         }
     }
 }

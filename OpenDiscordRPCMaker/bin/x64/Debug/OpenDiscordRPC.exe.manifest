@@ -4,7 +4,7 @@
   <description asmv2:iconFile="discord_avatar_1_ORl_icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="OpenDiscordRPC" version="0.0.0.2" language="neutral" processorArchitecture="amd64" />
+    <assemblyIdentity name="OpenDiscordRPC" version="0.0.0.3" language="neutral" processorArchitecture="amd64" />
     <commandLine file="OpenDiscordRPC.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -67,14 +67,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OpenDiscordRPC.exe" size="79272">
-      <assemblyIdentity name="OpenDiscordRPC" version="0.0.0.2" language="neutral" processorArchitecture="amd64" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OpenDiscordRPC.exe" size="135080">
+      <assemblyIdentity name="OpenDiscordRPC" version="0.0.0.3" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>o9VV43SEjUnmlom5RXAZacmEKcwPF8DgeissG/naErk=</dsig:DigestValue>
+        <dsig:DigestValue>+6vz9ZCZ0e1p0IAdeFvZnwf5KSxuOSsM/bymJPnOGzI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -87,13 +87,13 @@
       <dsig:DigestValue>o/bYEq4aW/C5OOtGcwu8E1ljeU/tU+jlzC9TR0ndlBw=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="OpenDiscordRPC.exe.config" size="544">
+  <file name="OpenDiscordRPC.exe.config" size="1254">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>dBuLcGJZURn7vOGj6aC8JWz8FXkDBNEz5xXQkJL4Dio=</dsig:DigestValue>
+      <dsig:DigestValue>UVn5WGy8a1AMlK2tQljvoDs/uAMWpxMGIzjre+whgIk=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>
